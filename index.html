@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Mark Apartments</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #2E3A2F;      /* Old Town Green */
+  --light: #F5F4F1;      /* Morning Light */
+  --pink: #E6A5B5;       /* Urban Pink */
+  --text: #1C1C1C;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--text);
+}
+
+/* NAV */
+.nav {
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.logo {
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 80px 40px;
+  background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85') center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  max-width: 650px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* SECTION */
+.section {
+  padding: 120px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* SPLIT */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.split p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* IMAGE STRIP */
+.image {
+  height: 420px;
+  background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267') center/cover;
+}
+
+/* CTA */
+.cta {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.cta h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: var(--pink);
+  color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 60px;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+  <div class="logo">ST.MARK</div>
+  <div>Kraków</div>
+</div>
+
+<section class="hero">
+  <h1>
+    Zatrzymaj się w samym centrum Krakowa — wszystko, co najciekawsze, jest kilka kroków od drzwi.
+  </h1>
+</section>
+
+<section class="section">
+  <div class="split">
+    <div>
+      <h2>O miejscu</h2>
+    </div>
+    <div>
+      <p>
+        Apartamenty znajdują się w samym sercu miasta. Rano możesz wyjść po kawę,
+        a wieczorem wrócić spacerem przez Stare Miasto.
+      </p>
+      <p>
+        To prosta, wygodna baza — dokładnie tam, gdzie Kraków dzieje się naprawdę.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="image"></div>
+
+<section class="section">
+  <div class="split">
+    <div>
+      <h2>Apartamenty</h2>
+    </div>
+    <div>
+      <p>
+        Studio, apartamenty dla dwóch osób i większe przestrzenie dla rodzin.
+      </p>
+      <p>
+        Każdy zaprojektowany tak, żeby pobyt był naturalny i bezproblemowy.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Sprawdź dostępność</h2>
+  <a href="mailto:kontakt@stmark.pl">Napisz do nas</a>
+</section>
+
+<footer>
+  St. Mark Apartments — Kraków
+</footer>
+
+</body>
+</html>
